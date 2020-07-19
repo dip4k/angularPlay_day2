@@ -1,0 +1,18 @@
+<div class="">
+  <h4>My name is {{name.toUpperCase()}}</h4>
+</div>
+
+<div class="container">
+  <ul *ngFor="let people of peopledata">
+    <li>
+      {{people.name +" : "+people.email}}
+    </li>
+    <ng-template [ngIf]="people.gender=='female'">
+      <p> {{people.gender}}</p>
+    </ng-template>
+
+    <br>
+    <p>{{people.address}}</p>
+    <br>
+  </ul>
+</div>
