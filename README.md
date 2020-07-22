@@ -37,6 +37,7 @@
 - Modules
 - Components
 - Directives
+- life cycle hooks
 - Decorators (add metadata at runtime)
 - class models / interfaces
 - Pipes
