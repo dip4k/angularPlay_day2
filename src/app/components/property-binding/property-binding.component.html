@@ -1,0 +1,10 @@
+<div class="container">
+  <input type="text" [name]="inputName" [(ngModel)]="inputValue" (change)="printValue($event)"
+    maxlength="{{maxlength}}">
+  <!-- <p [ngClass]="{'red':inputValue=='Dipak','blue':inputValue!='Dipak'}">Current InputValue : {{inputValue}}</p> -->
+  <p [ngClass]="className">Current InputValue : {{inputValue}}</p>
+  <button (click)="changeToBlue($event)">change color to blue</button>
+</div>
+
+
+<app-test></app-test>
